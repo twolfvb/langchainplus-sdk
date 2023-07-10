@@ -34,6 +34,7 @@ from tenacity import (
     wait_exponential,
 )
 
+from pydantic_settings import BaseSettings
 from langsmith.evaluation.evaluator import RunEvaluator
 from langsmith.schemas import (
     APIFeedbackSource,
@@ -62,7 +63,6 @@ from langsmith.utils import (
     request_with_retries,
     xor_args,
 )
-from pydantic_settings import BaseSettings
 
 if TYPE_CHECKING:
     import pandas as pd
